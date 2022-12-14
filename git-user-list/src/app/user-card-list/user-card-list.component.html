@@ -1,0 +1,11 @@
+<h2>User List</h2>
+
+<ul>
+    <li *ngFor="let user of users">
+        <img src="{{user.avatar_url}}" width="150px">
+        <h3>Login: {{user.login | uppercase}}</h3>
+        <h5>Type: {{user.type}}</h5>
+        <h5>Is Site Admin: {{user.site_admin}}</h5>
+        <a href="{{user.html_url}}">GitHub Link</a>
+    </li>
+</ul>
